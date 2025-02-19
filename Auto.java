@@ -4,6 +4,7 @@ public class Auto
     private String modello;
     public String colore;
     private int anno;
+    public String nuovoColore;
 
     public Auto(String marca, String modello, String colore, int anno) 
     {
@@ -36,9 +37,23 @@ public class Auto
     {
         return anno;
     }
-    public void setAnno(String anno) 
+    public void setAnno(int anno) 
     {
         this.anno = anno;
+    }
+
+    public int getColore(int colore) 
+    {
+        return colore;
+    }
+    public void setColore(String colore) 
+    {
+       this.colore = colore;
+    }
+
+    public void mostraDettagli() 
+    {
+        System.out.println("Marca: " + marca + ", Modello: " + modello + ", Colore: " + colore + ", Anno: " + anno);
     }
    
 }
